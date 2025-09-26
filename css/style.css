@@ -1,0 +1,323 @@
+body {
+    margin: 0;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 20px;
+    line-height: 155%;
+}
+
+header {
+    background-color: bisque;
+    width: 100%;
+    min-height: 130px;
+    border-bottom: 3px solid orange;
+}
+
+main {
+    min-height: 100vh;
+    padding: 0px 5% 0px 5%;
+}
+
+footer {
+    background-color: bisque;
+    width: 100%;
+    min-height: 120px;
+    border-top: 3px solid orange;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Segoe UI';
+    text-shadow: 5px 3px 30px black;
+}
+
+ul li {
+    font-family: 'Segoe UI';
+}
+
+img {
+    max-width: 100%;
+}
+
+.header-logo{
+    float: left;
+    display: inline;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 3px solid orange;
+    border-radius: 15px;
+    box-shadow: 3px 3px 4px black;
+}
+
+a.hamburger-menu {
+    background-color: none !important;
+    color: orange !important;
+    border-bottom: none !important;
+    position: fixed;
+    top: -8px;
+    right: 10px;
+}
+
+
+header a {
+    color: coral;
+    float: left;
+    text-decoration: none;
+    font-size: 27px;
+    padding: 1px 10px;
+    margin-top: 55px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+a.active {
+    border-bottom: 3px solid orange;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    top: -15px;
+    position: relative;
+    font-weight: bold;
+    text-decoration: none;
+    color: coral;
+    font-size: 27px;
+    padding: 8px 12px;
+}
+
+  /* линия снизу */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background: orange;
+    transition: width 0.4s ease;
+}
+
+  /* при наведении появляется линия */
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+
+.centered {
+    text-align: center;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 35px;
+    float: right;
+}
+
+.centered {
+    text-align: center;
+}
+
+.membru {
+    border: 3px solid orange;
+    border-radius: 15px;
+    box-shadow: 3px 3px 4px black;
+}
+
+.membrii{
+        display: inline-flex;
+        justify-content: space-between;
+}
+
+.col-1 {width: 10%;}
+.col-2 {width: 20%;}
+.col-3 {width: 30%;}
+.col-4 {width: 40%;}
+.col-5 {width: 50%;}
+.col-6 {width: 60%;}
+.col-7 {width: 70%;}
+.col-8 {width: 80%;}
+.col-9 {width: 90%;}
+.col-10 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+}
+
+.row {
+    overflow: hidden;
+}
+
+hr {
+    border-top: 2px solid orange;
+}
+
+.maps{
+    border: 3px solid orange;
+    border-radius: 15px;
+    box-shadow: 3px 3px 4px black;
+    width: 400px;
+}
+
+.btn{
+    background-color: burlywood;
+    color: coral;
+    border: 3px solid orange;
+    border-radius: 15px;
+    height: 60px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    /*margin-left: 40%;*/
+    transition: all linear 0.5s;
+    justify-content: space-between;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: coral;
+    color: red;
+    border: 3px solid orangered;
+    transition: all linear 0.5s;
+}
+
+.input-box {
+    height: 20px;
+    width: 180px;
+    border: 3px solid orange;
+    background-color: bisque;
+    color: orangered;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all linear 0.3s;
+}
+
+.input-box:hover {
+    transform: scale(1.1);
+    transition: all linear 0.2s;
+}
+
+.input-box2 {
+    height: 40px;
+    width: 250px;
+    border: 3px solid orange;
+    background-color: bisque;
+    color: orangered;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all linear 0.3s;
+}
+
+.input-box2:hover {
+    transform: scale(1.1);
+    transition: all linear 0.2s;
+}
+
+
+.input-submit {
+    height: 40px;
+    width: 180px;
+    border: 3px solid orange;
+    background-color: bisque;
+    color: orangered;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: all linear 0.5s;
+}
+
+.input-submit:hover {
+    transform: scale(1.1);
+    transition: all linear 0.4s;
+}
+
+.img-scoala {
+    margin-top: 15px;
+    border: 3px solid orange;
+    border-radius: 15px;
+    box-shadow: 3px 3px 4px black;
+    margin-left: 10px;
+}
+
+table, th, td {
+    border: 2px solid orange;
+    background-color: bisque;
+    color: coral;
+}
+
+th, td {
+    min-width: 35px;
+}
+
+.orar {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+
+
+@media (max-width: 770px) {
+
+    [class*="col-"] {
+        width: 100%;
+    }
+
+
+    .nav {
+        position: fixed;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: bisque;
+        border: 3px solid orange;
+        right: 1px;
+        top: 90px;
+      }
+    
+      .nav-links {
+        display: none; /* ascuns inițial */
+        flex-direction: column;  /* fiecare link pe linia lui */
+        width: 100%;
+        margin-top: 10px;
+      }
+    
+      .nav-links a {
+        display: block;     /* ocupă toată lățimea */
+        padding: 12px 15px; /* spațiu frumos */
+        margin: 0;          /* fără margin laterale */
+        color: coral;
+        text-align: left;   /* aliniere la stânga */
+      }
+    
+      .hamburger-menu {
+        display: block; /* afișăm pe mobil */
+        position: absolute;
+        right: 15px;
+        top: 15px;
+      }
+    
+      /* când meniul este activ */
+      .nav.mobile .nav-links {
+        display: flex;
+        animation: slideDown 0.4s ease forwards;
+      }
+}
+@keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
