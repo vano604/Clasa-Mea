@@ -264,6 +264,27 @@ th, td {
     margin-bottom: 15px;
 }
 
+.vezi-profil {
+    height: 20px;
+    width: 180px;
+    border: 3px solid orange;
+    background-color: bisque;
+    color: orangered;
+    border-radius: 10px;
+    font-size: 14px;
+    height: 60px;
+    font-size: 18px;
+    transition: all linear 0.3s;
+}
+
+.vezi-profil:hover {
+    cursor: pointer;
+    background-color: coral;
+    color: bisque;
+    border: 3px solid orangered;
+    transform: scale(1.1);
+    transition: all linear 0.2s;
+}
 
 
 @media (max-width: 770px) {
