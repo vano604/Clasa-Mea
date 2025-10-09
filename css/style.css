@@ -23,7 +23,7 @@ main {
 footer {
     background-color: bisque;
     width: 100%;
-    min-height: 120px;
+    min-height: 200px;
     border-top: 3px solid orange;
 }
 
@@ -166,7 +166,7 @@ hr {
     border: 3px solid orange;
     border-radius: 15px;
     box-shadow: 3px 3px 4px black;
-    width: 400px;
+    max-width: 400px;
 }
 
 .btn{
@@ -282,6 +282,19 @@ th, td {
     background-color: coral;
     color: bisque;
     border: 3px solid orangered;
+    transform: scale(1.1);
+    transition: all linear 0.2s;
+}
+
+
+.links {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    transition: all linear 0.4s;
+}
+
+.links > img:hover {
     transform: scale(1.1);
     transition: all linear 0.2s;
 }
